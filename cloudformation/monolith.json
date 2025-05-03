@@ -40,69 +40,41 @@
     "PublicSubnet1": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
-        "VpcId": {
-          "Ref": "VPC"
-        },
-        "AvailabilityZoneId": "aps1-az2",
+        "VpcId": { "Ref": "VPC" },
+        "AvailabilityZone": "ap-south-1a",
         "CidrBlock": "10.1.0.0/20",
         "MapPublicIpOnLaunch": true,
-        "Tags": [
-          {
-            "Value": "marketpilot_public_subnet_1",
-            "Key": "Name"
-          }
-        ]
+        "Tags": [{ "Value": "marketpilot_public_subnet_1", "Key": "Name" }]
       }
     },
     "PrivateSubnet1": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
-        "VpcId": {
-          "Ref": "VPC"
-        },
-        "AvailabilityZoneId": "aps1-az2",
+        "VpcId": { "Ref": "VPC" },
+        "AvailabilityZone": "ap-south-1a",
         "CidrBlock": "10.1.128.0/20",
         "MapPublicIpOnLaunch": false,
-        "Tags": [
-          {
-            "Value": "marketpilot_private_subnet_1",
-            "Key": "Name"
-          }
-        ]
+        "Tags": [{ "Value": "marketpilot_private_subnet_1", "Key": "Name" }]
       }
     },
     "PublicSubnet2": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
-        "VpcId": {
-          "Ref": "VPC"
-        },
-        "AvailabilityZoneId": "aps1-az1",
+        "VpcId": { "Ref": "VPC" },
+        "AvailabilityZone": "ap-south-1b",
         "CidrBlock": "10.1.16.0/20",
         "MapPublicIpOnLaunch": true,
-        "Tags": [
-          {
-            "Value": "marketpilot_public_subnet_2",
-            "Key": "Name"
-          }
-        ]
+        "Tags": [{ "Value": "marketpilot_public_subnet_2", "Key": "Name" }]
       }
     },
     "PrivateSubnet2": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
-        "VpcId": {
-          "Ref": "VPC"
-        },
-        "AvailabilityZoneId": "aps1-az1",
+        "VpcId": { "Ref": "VPC" },
+        "AvailabilityZone": "ap-south-1b",
         "CidrBlock": "10.1.144.0/20",
         "MapPublicIpOnLaunch": false,
-        "Tags": [
-          {
-            "Value": "marketpilot_private_subnet_2",
-            "Key": "Name"
-          }
-        ]
+        "Tags": [{ "Value": "marketpilot_private_subnet_2", "Key": "Name" }]
       }
     },
     "PublicRouteTable": {
