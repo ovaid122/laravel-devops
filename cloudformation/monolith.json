@@ -43,7 +43,7 @@
         "VpcId": {
           "Ref": "VPC"
         },
-        "AvailabilityZoneId": "use1-az4",
+        "AvailabilityZoneId": "aps1-az2",
         "CidrBlock": "10.1.0.0/20",
         "MapPublicIpOnLaunch": true,
         "Tags": [
@@ -60,7 +60,7 @@
         "VpcId": {
           "Ref": "VPC"
         },
-        "AvailabilityZoneId": "use1-az4",
+        "AvailabilityZoneId": "aps1-az2",
         "CidrBlock": "10.1.128.0/20",
         "MapPublicIpOnLaunch": false,
         "Tags": [
