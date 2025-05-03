@@ -211,7 +211,7 @@
     "EC2Instance": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
-        "ImageId": "ami-0d9462a653c34dab7",
+        "ImageId": "ami-0e35ddab05955cf57",
         "InstanceType": "t2.micro",
         "KeyName": "marketpilot",
         "SubnetId": {
