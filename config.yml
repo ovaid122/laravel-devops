@@ -20,6 +20,4 @@ installs:
   mailhog: no
   ngrok: no
   postfix: no
-
-
-
+  git: yes
