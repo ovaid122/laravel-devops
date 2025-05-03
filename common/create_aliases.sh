@@ -23,6 +23,6 @@ do
 done
 
 if [ $need_to_resource -eq 1 ]; then
-  source ~/.bashrc
-  echo "To use the new aliases, you may need to run: source ~/.bashrc"
+  source ~/.bash_aliases
+  echo "New aliases sourced from ~/.bash_aliases"
 fi
