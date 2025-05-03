@@ -27,7 +27,7 @@ if id "$username" >/dev/null 2>&1; then
   error "This user already exists. Username: $username"
 else
   # Create the deployment user
-  sudo adduser -m $username
+  sudo adduser --gecos "" --disabled-password $username
   sudo chpasswd <<<"$username:$password"
 
   # Create the Github Deployment Keys
