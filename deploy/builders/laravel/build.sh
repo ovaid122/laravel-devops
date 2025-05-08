@@ -11,10 +11,10 @@ source $builder_directory/symlinks.sh
 
 if [ ! -f archived_deployed.lock ]; then
   status "Composer Install"
-  composer install
+  composer install --no-interaction --prefer-dist --optimize-autoloader
 
   status "NPM Install"
-  npm install
+  npm install --legacy-peer-deps
 
   status "Build Front End Assets"
   npm run build
