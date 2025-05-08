@@ -9,7 +9,7 @@
         "InstanceTenancy": "default",
         "Tags": [
           {
-            "Value": "marketpilot_vpc",
+            "Value": "rannksense_vpc",
             "Key": "Name"
           }
         ]
@@ -20,7 +20,7 @@
       "Properties": {
         "Tags": [
           {
-            "Value": "marketpilot_igw",
+            "Value": "rannksense_igw",
             "Key": "Name"
           }
         ]
@@ -44,7 +44,7 @@
         "AvailabilityZone": "ap-south-1a",
         "CidrBlock": "10.1.0.0/20",
         "MapPublicIpOnLaunch": true,
-        "Tags": [{ "Value": "marketpilot_public_subnet_1", "Key": "Name" }]
+        "Tags": [{ "Value": "rannksense_public_subnet_1", "Key": "Name" }]
       }
     },
     "PrivateSubnet1": {
@@ -54,7 +54,7 @@
         "AvailabilityZone": "ap-south-1a",
         "CidrBlock": "10.1.128.0/20",
         "MapPublicIpOnLaunch": false,
-        "Tags": [{ "Value": "marketpilot_private_subnet_1", "Key": "Name" }]
+        "Tags": [{ "Value": "rannksense_private_subnet_1", "Key": "Name" }]
       }
     },
     "PublicSubnet2": {
@@ -64,7 +64,7 @@
         "AvailabilityZone": "ap-south-1b",
         "CidrBlock": "10.1.16.0/20",
         "MapPublicIpOnLaunch": true,
-        "Tags": [{ "Value": "marketpilot_public_subnet_2", "Key": "Name" }]
+        "Tags": [{ "Value": "rannksense_public_subnet_2", "Key": "Name" }]
       }
     },
     "PrivateSubnet2": {
@@ -74,7 +74,7 @@
         "AvailabilityZone": "ap-south-1b",
         "CidrBlock": "10.1.144.0/20",
         "MapPublicIpOnLaunch": false,
-        "Tags": [{ "Value": "marketpilot_private_subnet_2", "Key": "Name" }]
+        "Tags": [{ "Value": "rannksense_private_subnet_2", "Key": "Name" }]
       }
     },
     "PublicRouteTable": {
@@ -85,7 +85,7 @@
         },
         "Tags": [
           {
-            "Value": "marketpilot_rtb_public",
+            "Value": "rannksense_rtb_public",
             "Key": "Name"
           }
         ]
@@ -202,7 +202,7 @@
         ],
         "Tags": [
           {
-            "Value": "marketpilot_sg",
+            "Value": "rannksense_sg",
             "Key": "Name"
           }
         ]
@@ -213,7 +213,7 @@
       "Properties": {
         "ImageId": "ami-0e35ddab05955cf57",
         "InstanceType": "t2.micro",
-        "KeyName": "marketpilot",
+        "KeyName": "rannksense",
         "SubnetId": {
           "Ref": "PublicSubnet1"
         },
@@ -224,7 +224,7 @@
         ],
         "Tags": [
           {
-            "Value": "marketpilot_ec2_instance",
+            "Value": "rannksense",
             "Key": "Name"
           }
         ],
