@@ -16,3 +16,7 @@ sudo npm install -g npm
 
 # Install global frontend tools
 sudo npm install -g gulp-cli bower yarn grunt-cli vite
+
+# Confirm installation
+node -v
+npm -v
