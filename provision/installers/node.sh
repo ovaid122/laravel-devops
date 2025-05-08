@@ -1,15 +1,18 @@
 #!/bin/bash
 
-# NodeJS
-curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
+title "Installing Latest Stable (LTS) Node.js and Frontend Tools"
 
-## Update Package Lists
+# Add NodeSource repo for latest LTS version
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+
+# Update package list
 sudo apt-get update -y
 
-# Install Node
+# Install Node.js (includes npm)
 sudo apt install -y nodejs
-sudo /usr/bin/npm install -g npm
-sudo /usr/bin/npm install -g gulp-cli
-sudo /usr/bin/npm install -g bower
-sudo /usr/bin/npm install -g yarn
-sudo /usr/bin/npm install -g grunt-cli
+
+# Upgrade npm to latest version
+sudo npm install -g npm
+
+# Install global frontend tools
+sudo npm install -g gulp-cli bower yarn grunt-cli vite
